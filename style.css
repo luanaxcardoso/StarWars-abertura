@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+body {
+    margin: 0;
+    background: #000;
+    overflow: hidden;    
+}
+
+.imagem-topo {
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 25px;
+  margin-top: 30px;
+  
+}
+
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: 1;    
+    opacity: 0;
+}
+
+.intro_texto {
+  font-family: "Impact", sans-serif;
+  color: #11ebeb;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-shadow: 2px 2px 1px #fcf94d;
+  animation: digitar 4s steps(30) forwards;
+}
+
+@keyframes digitar {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+.historia {
+    position: absolute;
+    top: 80%;
+}
+
+.historia_texto {
+  font-family: 'Bruno Ace SC', sans-serif;
+  font-weight: 700;
+  color: #FFD700;
+  text-align: justify;
+  letter-spacing: .1em;
+  line-height: 1.1em;  
+}
+
+.paragrafos {
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  z-index: 1.5;
+  transform-origin: 50%;
+  transform: perspective(300px) rotateX(20deg);
+}
+
+
+.botao {
+  font-size: 20px;
+  color: rgb(226, 236, 76);
+  display: inline-block;
+  margin: 25px;
+  margin-top: 30px;
+  padding: 15px;
+  border: 4px solid;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  color: #f4f818;
+  background-color: rgb(10, 148, 240);
+}
+
+.intro_animacao {
+   animation: intro 3s ease-out 0s;
+}
+
+.historia_animacao {
+    animation: paragrafos 18s linear 2s;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes paragrafos {
+  0% {
+    top: 75%;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: -200%;
+    opacity: 0;
+  }
+  }
+  
+  @keyframes brilho {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #snow {
+    position: absolute;
+    top: 1;
+    left: 0;
+    z-index: -2;
+  }
+
+  
+
+  
+  
