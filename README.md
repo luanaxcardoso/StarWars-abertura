@@ -1,5 +1,5 @@
 <div align="center">
-<h1>WoMakersCode</h1>
+<h1> 🦋WoMakersCode🦋</h1>
 <div align="center">
 <h1>Projeto - Mais mulheres em tech</h1>
 <div align="center">
